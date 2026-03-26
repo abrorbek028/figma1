@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0f1a, #1c1c2e);
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  align-items: center;
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.contact-btn {
+  padding: 10px 20px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 60px;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  padding: 12px 20px;
+  background: #5a5cff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-img img {
+  width: 300px;
+}
+
+/* WHY */
+.why {
+  padding: 60px;
+}
+
+.why-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.why h2 {
+  font-size: 32px;
+}
+
+.why p {
+  color: #aaa;
+  max-width: 400px;
+}
+
+/* VIDEO */
+.video {
+  position: relative;
+}
+
+.video img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #5a5cff;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar nav {
+    display: none; /* menyuni yashiramiz */
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  /* HERO */
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: left;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .hero-img {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .hero-img img {
+    width: 220px;
+  }
+
+  /* WHY */
+  .why {
+    padding: 40px 20px;
+  }
+
+  .why-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .why h2 {
+    font-size: 24px;
+  }
+
+  .why p {
+    font-size: 14px;
+  }
+
+  /* VIDEO */
+  .play {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
